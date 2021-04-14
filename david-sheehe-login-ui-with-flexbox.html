@@ -17,7 +17,7 @@
     background-color: orangered;
     border-radius: 10px;
     min-width: 200px;
-    max-width: 50%;
+    max-width: 100%;
     margin:auto;
     border-color: olive;
     border-width: 2px;
@@ -30,11 +30,15 @@ box-shadow: 20px 10px 5px 0px rgba(0,0,0,0.75);
     }
     #whole-box{
         display: flex;
-        
+        width:100%;
+        align-items: center;
+        justify-content: center;
+        height:100vh;
+        min-height: 200px;
     }
 
     .fill-ins{
-        margin: 20px;
+        margin: 10px;
         
 
     }
@@ -47,21 +51,23 @@ box-shadow: 20px 10px 5px 0px rgba(0,0,0,0.75);
         color:white;
         background-color: navy;
         width: 50%;
+        border-radius: 20px;
 
     }
     
 </style>
 <html>
-    
-    <div id="whole-box">
-        <form class="inside-box">
-            <p id ="plaintext" class="fill-ins">Sign in</p>
-            <input type="text" id="username" class="fill-ins" placeholder="username">
-            <input type="password" id="password" class="fill-ins" placeholder="password">
-            <button type="submit" class="fill-ins" id="submit" onclick="alert('Nice Click')"> Submit</button>
-            
+    <body>
+        <div id="whole-box">
+            <form class="inside-box">
+                <p id ="plaintext" class="fill-ins">Sign in</p>
+                <input type="text" id="username" class="fill-ins" placeholder="username">
+                <input type="password" id="password" class="fill-ins" placeholder="password">
+                <button type="submit" class="fill-ins" id="submit" onclick="alert('Nice Click')"> Submit</button>
+                
 
-        
-        </form>
-    </div>
+            
+            </form>
+        </div>
+    </body>
 </html>
