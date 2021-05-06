@@ -11,32 +11,31 @@
 
 <style>
     body{
-        background-color: rgb(251,251,251);
+        background-color: brown;
     }
     
-    .box-itself{
+    .inside-box{
     display: flex;
     align-content:space-between;
     align-items: center;
     width: fit-content;
     flex-direction: column;
     margin: auto;
-    background-color: white;
+    background-color: orangered;
     border-radius: 10px;
-    min-width: 20%;
-    min-height: 50%;
-    max-width: 33%;
+    min-width: 200px;
+    max-width: 100%;
     margin:auto;
-    /* border-color: olive;
+    border-color: olive;
     border-width: 2px;
-    border-style: groove; */
+    border-style: groove;
     -webkit-box-shadow: 20px 10px 5px 0px rgba(0,0,0,0.75);
 -moz-box-shadow: 20px 10px 5px 0px rgba(0,0,0,0.75);
 box-shadow: 20px 10px 5px 0px rgba(0,0,0,0.75);
         
     
     }
-    #page-div{
+    #whole-box{
         display: flex;
         width:100%;
         align-items: center;
@@ -46,33 +45,20 @@ box-shadow: 20px 10px 5px 0px rgba(0,0,0,0.75);
     }
 
     .fill-ins{
-        margin: 12px;
+        margin: 10px;
         
 
     }
-
-    input {
-        border-top-style: hidden;
-        border-right-style: hidden;
-        border-left-style: hidden;
-        border-bottom-style: groove;
-        background-color: white;
-      }
-
     #plaintext{
-        font-family:Candara;
-        font-size: 20px;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 22px;
         font-weight: bold;
     }
-    button {
+    #submit{
         color:white;
-        background-color: rgb(19,144,222);
+        background-color: navy;
         width: 50%;
-        max-width: 250px;
-        border: none;
-        height:30px;
         border-radius: 20px;
-        margin: 10px;
 
     }
     
@@ -82,12 +68,12 @@ box-shadow: 20px 10px 5px 0px rgba(0,0,0,0.75);
 
 
     <body>
-        <div id="page-div">
-            <form class="box-itself">
+        <div id="whole-box">
+            <form class="inside-box">
                 <p id ="plaintext" class="fill-ins">Sign in</p>
-                <input type="text" id="username" class="fill-ins" class="boxes" placeholder="username">
-                <input type="password" id="password" class="fill-ins" class="boxes" placeholder="password">
-                <button type="submit"  onclick="alert('Nice Click')"> Sign in</button>
+                <input type="text" id="username" class="fill-ins" placeholder="username">
+                <input type="password" id="password" class="fill-ins" placeholder="password">
+                <button type="submit" class="fill-ins" id="submit" onclick="alert('Nice Click')"> Submit</button>
                 
 
             
